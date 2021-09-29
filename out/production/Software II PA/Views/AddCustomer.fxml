@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddCustomer">
+   <children>
+      <Label layoutX="63.0" layoutY="48.0" style="-fx-font-weight: bold;" text="Add Customer" />
+      <TextField fx:id="AddCustIDField" editable="false" layoutX="190.0" layoutY="111.0" promptText="Customer ID is auto-generated" />
+      <TextField fx:id="AddCustNameField" layoutX="190.0" layoutY="151.0" />
+      <TextField fx:id="AddCustAddressField" layoutX="190.0" layoutY="192.0" />
+      <TextField fx:id="AddCustPostalField" layoutX="192.0" layoutY="283.0" />
+      <TextField fx:id="AddCustPhoneField" layoutX="191.0" layoutY="238.0" />
+      <Label layoutX="64.0" layoutY="115.0" text="Customer ID" />
+      <Label layoutX="65.0" layoutY="155.0" text="Name" />
+      <Label layoutX="66.0" layoutY="196.0" text="Address" />
+      <Label layoutX="66.0" layoutY="287.0" text="Postal Code" />
+      <Label layoutX="66.0" layoutY="242.0" text="Phone #" />
+      <Label fx:id="PartLabelName" layoutX="66.0" layoutY="332.0" text="Country" />
+      <Button fx:id="AddCustSaveButton" layoutX="432.0" layoutY="433.0" mnemonicParsing="false" onAction="#onActionSave" text="Save" />
+      <Button fx:id="AddCustCancelButton" layoutX="502.0" layoutY="433.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+      <ComboBox fx:id="AddCustCountryCombo" layoutX="192.0" layoutY="328.0" onAction="#onActionPopulateDivision" prefWidth="150.0" promptText="Choose A Country..." />
+      <ComboBox fx:id="AddCustStateCombo" layoutX="190.0" layoutY="376.0" prefHeight="25.0" prefWidth="181.0" promptText="Choose A State/Province..." />
+      <Label fx:id="PartLabelName2" layoutX="65.0" layoutY="380.0" text="State/Province" />
+   </children>
+</AnchorPane>

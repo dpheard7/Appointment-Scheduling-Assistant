@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReportsViewChoice" prefHeight="628.0" prefWidth="1165.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ReportsController">
+   <children>
+      <Label layoutX="36.0" layoutY="64.0" text="View Report:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="ReportsReturnToMain" layoutX="1017.0" layoutY="577.0" mnemonicParsing="false" onAction="#onActionReturnToMain" text="Back to Main Menu" />
+      <Button fx:id="ReportsGenerateButton" layoutX="531.0" layoutY="526.0" mnemonicParsing="false" onAction="#onActionGenerateReport" text="Generate Report" />
+      <TableView fx:id="ReportsMonthlyTable" layoutX="36.0" layoutY="143.0" prefHeight="200.0" prefWidth="304.0">
+        <columns>
+          <TableColumn fx:id="ReportMonthColumn" prefWidth="52.0" text="Month" />
+          <TableColumn fx:id="ReportTypeColumn" prefWidth="146.0" text="Type" />
+            <TableColumn fx:id="ReportCountColumn" prefWidth="105.0" text="Count" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ReportsContactSkedTable" layoutX="340.0" layoutY="143.0" prefHeight="200.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="ContactTableApptIDColumn" prefWidth="52.0" text="Appt ID" />
+          <TableColumn fx:id="ContactTableCustIDColumn" prefWidth="79.0" text="Customer ID" />
+            <TableColumn fx:id="ContactTableTitleColumn" prefWidth="94.0" text="Title" />
+            <TableColumn fx:id="ContactTableTypeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="ContactTableDescColumn" prefWidth="98.0" text="Description" />
+            <TableColumn fx:id="ContactTableStartColumn" prefWidth="125.0" text="Start" />
+            <TableColumn fx:id="ContactTableEndColumn" prefWidth="135.0" text="End" />
+            <TableColumn fx:id="ContactTableContactIDCol" prefWidth="72.0" text="Contact ID" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ReportsByLocationTable" layoutX="469.0" layoutY="257.0" prefHeight="200.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="LocationColumn" prefWidth="75.0" text="Location" />
+          <TableColumn fx:id="LocationTableCountColumn" prefWidth="75.0" text="Count" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="ContactIDCombo" layoutX="448.0" layoutY="63.0" prefWidth="150.0" />
+      <Label fx:id="ContactIDLabel" layoutX="382.0" layoutY="65.0" text="Contact:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ReportsSelectCombo" layoutX="129.0" layoutY="62.0" onAction="#onActionShowContacts" prefWidth="150.0" />
+   </children>
+</AnchorPane>

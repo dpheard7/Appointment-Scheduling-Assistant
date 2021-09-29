@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddAppt">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="563.0" style="-fx-border-radius: 5; -fx-border-color: black;">
+         <children>
+            <Label fx:id="ProductAddLabel" layoutX="30.0" layoutY="28.0" style="-fx-font-weight: bold;" text="Add Appointment" />
+            <TextField fx:id="AddApptTitleField" layoutX="155.0" layoutY="157.0" AnchorPane.leftAnchor="155.0" />
+            <TextField fx:id="AddApptDescField" layoutX="155.0" layoutY="198.0" AnchorPane.leftAnchor="155.0" />
+            <Label layoutX="34.0" layoutY="80.0" text="Customer" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="34.0" layoutY="160.0" text="Title" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="34.0" layoutY="201.0" text="Description" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="34.0" layoutY="241.0" text="Location" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="64.0" layoutY="277.0" />
+            <Button fx:id="AddApptSave" layoutX="394.0" layoutY="469.0" mnemonicParsing="false" onAction="#onActionSave" text="Save" />
+            <Button fx:id="AddApptCancel" layoutX="482.0" layoutY="469.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+            <Label layoutX="34.0" layoutY="278.0" text="Contact" AnchorPane.leftAnchor="34.0" />
+            <ComboBox fx:id="AddApptContactCombo" layoutX="155.0" layoutY="275.0" prefWidth="150.0" AnchorPane.leftAnchor="155.0" />
+            <Label layoutX="34.0" layoutY="315.0" text="Type" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="34.0" layoutY="350.0" text="Date" AnchorPane.leftAnchor="34.0" />
+            <Label layoutX="34.0" layoutY="390.0" text="Start Time" AnchorPane.leftAnchor="34.0" />
+            <ComboBox fx:id="AddApptStartTimeCombo" layoutX="155.0" layoutY="387.0" prefWidth="150.0" AnchorPane.leftAnchor="155.0" />
+            <Label layoutX="34.0" layoutY="119.0" text="Appointment ID" AnchorPane.leftAnchor="34.0" />
+            <TextField fx:id="AddApptApptIDField" editable="false" layoutX="155.0" layoutY="115.0" promptText="ID is auto-generated" AnchorPane.leftAnchor="155.0" />
+            <ComboBox fx:id="AddApptTypeCombo" layoutX="155.0" layoutY="311.0" prefWidth="150.0" AnchorPane.leftAnchor="155.0" />
+            <ComboBox fx:id="AddApptLocationCombo" layoutX="155.0" layoutY="237.0" prefWidth="150.0" AnchorPane.leftAnchor="155.0" />
+            <DatePicker fx:id="AddApptDatePicker" layoutX="155.0" layoutY="346.0" AnchorPane.leftAnchor="155.0" />
+            <ComboBox fx:id="AddApptEndTimeCombo" layoutX="384.0" layoutY="386.0" prefWidth="150.0" />
+            <Label layoutX="341.0" layoutY="391.0" text="End" />
+            <ComboBox fx:id="AddApptCustomerCombo" layoutX="156.0" layoutY="76.0" prefWidth="150.0" promptText="Select a customer..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
